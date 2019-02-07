@@ -1,4 +1,4 @@
-# download_elb_log
+# download-s3elb-log
 
 ## Usage
 
