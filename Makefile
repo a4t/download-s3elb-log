@@ -17,7 +17,6 @@ filenames:
 
 download:
 	cat files.log | xargs -I{} aws s3 cp ${S3_PATH}{} ./logs/
-	ls logs/ | grep '.log.gz' | xargs -I{} gunzip -f logs/{}
 
 cleanup_workfile:
 	rm -rf files.log grep.log ls.log
